@@ -1,5 +1,6 @@
 # quotes
 
+
 ## Lab 8
 
 ## Collaborated with Adrian, Ryan, Devon
@@ -10,3 +11,4 @@
 
 ## Collaborated with Adrian & Ryan
 You can run the code and see the output quote by clicking the run/play button on the left of the main function.
+
