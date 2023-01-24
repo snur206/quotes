@@ -8,12 +8,14 @@ import static org.junit.jupiter.api.Assertions.*;
 import java.io.File;
 
 class AppTest {
-    @Test void appHasAGreeting() {
+    @Test
+    void appHasAGreeting() {
         App classUnderTest = new App();
         assertNotNull(classUnderTest.getGreeting(), "app should have a greeting");
     }
 
-    @Test void testingQuotesConstructor(){
+    @Test
+    void testingQuotesConstructor() {
         // Arrange
         // Act
         Quotes testQuotes = new Quotes("Charles Dickens", "Ask no questions, and you'll be told no lies.");
@@ -21,5 +23,14 @@ class AppTest {
         assertEquals("Ask no questions, and you'll be told no lies.", testQuotes.getText());
         assertEquals("Charles Dickens", testQuotes.getAuthor());
 
+    }
+
+    @Test
+    void testingRSQuotesConstructor() {
+        // Arrange
+        // Act
+        RSAPI testRS = new RSAPI("Capitalism: God's way of determining who is smart and who is poor.");
+        // Assert
+        assertEquals("Capitalism: God's way of determining who is smart and who is poor.", testRS.getQuote());
     }
 }
